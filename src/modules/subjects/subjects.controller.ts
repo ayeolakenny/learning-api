@@ -17,7 +17,7 @@ export class SubjectsController {
   }
 
   @Auth([Role.ADMIN])
-  @Post(':id/topic')
+  @Post(':id/topics')
   async createTopic(@IdParam() id: string, @Body() dto: CreateTopicDto) {
     return await this.subjects.createTopic(id, dto);
   }
