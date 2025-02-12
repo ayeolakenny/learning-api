@@ -4,6 +4,7 @@ This is a **NestJS-based Learning API** that allows users to view subjects, topi
 
 ## 🚀 Features
 
+- **User Authentication** (Signup, Login & Get Auth User)
 - **List Subjects**
 - **View Topics by Subject**
 - **View Topic Details** (Title, Video, Description)
@@ -18,7 +19,6 @@ This is a **NestJS-based Learning API** that allows users to view subjects, topi
 - **NestJS** (Backend Framework)
 - **PostgreSQL** (Database)
 - **Prisma ORM** (Database Management)
-- **Docker & Docker Compose** (Containerization)
 
 ---
 
@@ -27,14 +27,14 @@ This is a **NestJS-based Learning API** that allows users to view subjects, topi
 ### 1️⃣ Clone the Repository
 
 ```sh
-git clone https://github.com/your-repo/learning-api.git
+git clone https://github.com/ayeolakenny/learning-api
 cd learning-api
 ```
 
 ### 2️⃣ Install Dependencies
 
 ```sh
-npm install
+pnpm install
 ```
 
 ### 3️⃣ Set Up Environment Variables
@@ -72,6 +72,14 @@ pnpm start:dev
 
 ## 📌 API Endpoints
 
+### 🔹 **Authentication**
+
+| Method | Endpoint       | Description     | Auth |
+| ------ | -------------- | --------------- | ---- |
+| POST   | `/auth/signup` | Register a user | ❌   |
+| POST   | `/auth/login`  | User login      | ❌   |
+| GET    | `/auth/user`   | Get auth user   | ✅   |
+
 ### 🔹 **Subjects**
 
 | Method | Endpoint               | Description            | Auth     |
@@ -97,30 +105,13 @@ pnpm start:dev
 
 ---
 
-## 📦 Docker Setup
-
-### 1️⃣ Build & Run with Docker Compose
-
-```sh
-docker-compose up --build -d
-```
-
-### 2️⃣ Stop Containers
-
-```sh
-docker-compose down
-```
-
----
-
 ## 🔗 Postman Collection
 
 You can find the Postman collection here:
-[Postman Collection Link](YOUR_POSTMAN_COLLECTION_URL)
+[Postman Collection Link](https://documenter.getpostman.com/view/9115404/2sAYXBHfWh)
 
 ---
 
 ## 🌍 Deployed API
 
-You can access the deployed API here:
-[Deployed Api Link](https://learning-api-m2e2.onrender.com)
+[Deployed API URL](https://learning-api-m2e2.onrender.com)
