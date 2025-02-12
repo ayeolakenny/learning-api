@@ -117,3 +117,10 @@ docker-compose down
 
 You can find the Postman collection here:
 [Postman Collection Link](YOUR_POSTMAN_COLLECTION_URL)
+
+---
+
+## 🌍 Deployed API
+
+You can access the deployed API here:
+[Deployed Api Link](https://learning-api-m2e2.onrender.com)
